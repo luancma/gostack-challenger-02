@@ -1,4 +1,4 @@
-import { Model, Sequelize } from 'sequelize';
+import Sequelize, { Model } from 'sequelize';
 
 class User extends Model {
   static init(sequelize) {
@@ -8,7 +8,9 @@ class User extends Model {
         email: Sequelize.STRING,
         password_hash: Sequelize.STRING,
       },
-      sequelize
+      {
+        sequelize,
+      }
     );
   }
 }
