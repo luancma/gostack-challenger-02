@@ -19,15 +19,15 @@ module.exports = {
       age: {
         type: Sequelize.INTEGER,
         allowNull: false,
-        unique: true,
+        unique: false,
       },
       height: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.DECIMAL,
         allowNull: false,
         unique: false,
       },
       weight: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.DECIMAL,
         allowNull: false,
         unique: false,
       },
